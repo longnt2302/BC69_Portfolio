@@ -1,0 +1,366 @@
+body,
+html {
+  font-family: "Hind", sans-serif;
+  color: #212529;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+/* css common */
+.main-color {
+  color: #35a22c;
+}
+.main-bg {
+  background-color: #35a22c;
+}
+.sec_ttl {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+}
+.sec_spacing {
+  padding: 100px 0;
+}
+/* css header */
+header .navbar-brand {
+  font-size: 36px;
+}
+
+header .navbar-brand i {
+  font-size: 45px;
+}
+
+.navbar-brand span {
+  transition: 0.5s all;
+}
+
+.navbar-brand:hover span {
+  color: #35a22c;
+}
+
+.navbar .nav-item a {
+  position: relative;
+  transition: 0.5s all;
+}
+
+.navbar .nav-item .active {
+  color: #35a22c !important;
+}
+
+.navbar .nav-item .active:before {
+  width: 100%;
+}
+
+.navbar .nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #35a22c;
+  transition: 0.5s all;
+}
+
+.navbar .nav-item:hover a {
+  color: #35a22c !important;
+}
+
+.navbar .nav-item:hover a::before {
+  width: 100%;
+}
+
+/* css cyber_carousel */
+
+.cyber_carousel .carousel-item .carousel-caption {
+  background-color: rgba(39, 43, 54, 0.5);
+}
+
+.carousel-item .carousel-caption img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.carousel-item .carousel-caption h5 {
+  font-size: 56px;
+  line-height: 65px;
+}
+
+.carousel-item .carousel-caption p {
+  font-size: 24px;
+}
+
+.cyber_carousel .carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.cyber_carousel .carousel-indicators .active {
+  background-color: #35a22c;
+}
+
+/* css cyber_tabs */
+.col-item:hover {
+  cursor: pointer;
+}
+
+.col-item .tab_item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.5s all;
+  overflow: hidden;
+}
+
+.col-item:hover .tab_item {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.col-item .tab_caption {
+  padding: 1.25rem;
+  transition: 0.5s all;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 1px 1px 1px;
+}
+
+.tab_caption h3 {
+  font-size: 1.25rem;
+  transition: 0.5s all;
+}
+
+.tab_caption p {
+  font-size: 1rem;
+  color: #585858;
+  margin: 0;
+}
+
+.col-item:hover .tab_caption {
+  border-color: #35a22c;
+}
+
+.col-item:hover h3 {
+  color: #35a22c;
+}
+
+.cyber_tabs .nav-pills .nav-link {
+  color: #1a1d2d;
+  border: 1px solid #1a1d2d;
+  margin: 0 5px;
+}
+
+.cyber_tabs .nav-pills .nav-link.active,
+.cyber_tabs .nav-pills .show > .nav-link {
+  background-color: #35a22c;
+  color: #fff;
+  border-color: #35a22c;
+}
+
+/* css cyber_available */
+.cyber_available {
+  background: url(./../img/3.jpg) no-repeat center / cover fixed;
+  position: relative;
+}
+
+.cyber_available:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(7, 10, 12, 0.72);
+}
+
+.available_item {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid transparent;
+  transition: 0.5s all;
+}
+
+.available_item:hover {
+  border-color: white;
+  background-color: black;
+}
+
+.available_item i {
+  font-size: 48px;
+  color: #35a22c;
+}
+
+.available_item h4 {
+  font-size: 20px;
+  color: #fff;
+  line-height: 30px;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-weight: 800;
+}
+
+/* css award */
+.cyber_award {
+  background: url(./../img/memphis_3.png) no-repeat left / 50%;
+  position: relative;
+}
+
+.cyber_award:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255 255 255 / 50%);
+  top: 0;
+  left: 0;
+}
+
+.award_content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.award_content ul li {
+  display: inline-block;
+}
+
+.award_content ul li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.award_content ul li img {
+  width: 120px;
+  transform: scale(1);
+  transition: 0.5s all;
+}
+
+.award_content ul li:hover img {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* css footer */
+footer .social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .social li {
+  display: inline-block;
+}
+
+footer .social a {
+  opacity: 0.4;
+  transition: 0.5s all;
+}
+
+footer .social a:hover {
+  opacity: 1;
+}
+
+footer .social li i {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid;
+  border-radius: 50%;
+  transition: 0.5s all;
+}
+
+footer .social a:hover i {
+  color: #35a22c;
+  border-color: #35a22c;
+}
+
+footer .copyright {
+  border-top: 1px solid rgb(255 255 255 / 15%);
+  color: #aaa;
+}
+
+/* Yêu cầu : khi ở màn hình lớn trên 1400px, thì sẽ thực hiện để tiêu đề của carousel màu trắng */
+/* khi ở mnaf hình dành cho mobile, các tiêu đề sẽ có màu cam */
+/* khi ở màn hình dành cho ipad từ 576 -> 992 sẽ để các tiêu đề có màu đỏ */
+
+/* Với giá trị max-width sẽ hỗ trợ lấy tất cả thiết bị màn hình có chiều dài từ 0 đến đúng chiều dài mà chúng ta để ở max-width */
+/* Luôn luôn viết và điều chỉnh responsive với giá trị max-width dành cho các màn hình lớn trước */
+/* Giao diện mobile */
+/* @media  screen and (max-width: 992px) {
+  .carousel-item .carousel-caption h5 {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .carousel-item .carousel-caption h5 {
+    font-size: 30px;
+    color: orange;
+  }
+  .carousel-item .carousel-caption p {
+    color: red;
+  }
+} */
+
+/* Yêu cầu bài tập */
+/* Khách hàng yêu cầu ở các thiết bị từ 992 -> 1200 sẽ điều chỉnh logo màu tím */
+/* Khách hàn yêu cầu thêm ở thiết bị từ 0 -> 992 sẽ điều chỉnh logo màu vàng */
+/* Khách hàng yêu cầu ở màn hình mobile sẽ tăng kích thuớc hình ảnh avatar của banner lên 250px chiều dài và chiều cao */
+
+/* @media screen and (max-width: 1200px){
+  header .navbar-brand i,
+  header .navbar-brand span {
+    color: blueviolet;
+  }
+}
+
+@media screen and (max-width: 992px){
+  header .navbar-brand i,
+  header .navbar-brand span {
+    color: yellow;
+  }
+  header .navbar-toggler {
+    color: white;
+    border: 2px solid white;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .carousel-item .carousel-caption img {
+    width: 250px;
+    height: 150px;
+  }
+} */
+
+/* Reponsive web với min-width (mobile first) */
+/* Luôn luôn viết và điều chỉnh responsive với giá trị min-width dành cho các màn hình nhỏ trước */
+/* Yêu cầu với tiêu đề của banner, khi ở các màn hình dành cho table từ 576 trở lên sẽ điều chỉnh màu chữ là màu đỏ còn các thiết bị mobile sẽ có chữ trắng */
+
+@media screen and (min-width: 576px) {
+  .carousel-item .carousel-caption h5 {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .carousel-item .carousel-caption h5 {
+    color: orange;
+  }
+}
